@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './App.css';
+
+import Unmounting from './LifeCycles/Unmounting';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -17,13 +19,16 @@ import './App.css';
 // import ShortCircuit from './conditionalRendering/ShortCircuit';
 // import NameList from './List Rendering/NameList';
 // import MountingLifecycle from './LifeCycles/MountingLifecycle';
-import Updatinglifecycle from './LifeCycles/Updatinglifecycle';
+// import Updatinglifecycle from './LifeCycles/Updatinglifecycle';
+
 
 function App() {
   return (
     <div className="App">
-      
-    <Updatinglifecycle favcol="yellow"/>
+
+      <Unmounting />
+
+    {/* <Updatinglifecycle favcol="yellow"/> */}
 
       {/* <MountingLifecycle favtColor="green" /> */}
       {/* <NameList /> */}
