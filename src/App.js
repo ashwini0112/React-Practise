@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 
 import Unmounting from './LifeCycles/Unmounting';
+import ReactForm from './Forms/ReactForms';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -26,7 +27,8 @@ function App() {
   return (
     <div className="App">
 
-      <Unmounting />
+    <ReactForm />
+      {/* <Unmounting /> */}
 
     {/* <Updatinglifecycle favcol="yellow"/> */}
 
