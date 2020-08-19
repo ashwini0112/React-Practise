@@ -1,9 +1,14 @@
 import React from 'react';
 
 import './App.css';
+import HttpReact from './http/HttpReact';
+import HttpPost from './http/HttpPost';
+import GetFetch from './http/GetFetch';
+import PostFetch from './http/PostFetch';
 
-import Unmounting from './LifeCycles/Unmounting';
-import ReactForm from './Forms/ReactForms';
+// import Unmounting from './LifeCycles/Unmounting';
+// import ReactForm from './Forms/ReactForms';
+
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -26,8 +31,11 @@ import ReactForm from './Forms/ReactForms';
 function App() {
   return (
     <div className="App">
-
-    <ReactForm />
+      <PostFetch />
+      {/* <GetFetch /> */}
+      {/* <HttpPost /> */}
+      {/* <HttpReact /> */}
+    {/* <ReactForm /> */}
       {/* <Unmounting /> */}
 
     {/* <Updatinglifecycle favcol="yellow"/> */}
