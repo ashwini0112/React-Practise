@@ -4,9 +4,9 @@ class PostFetch extends Component{
     constructor(){
         super()
         this.state={
-            ProductName:'',
-            Quantity:'',
-            OrderssCount:''
+            name:'',
+            quantity:'',
+            count:''
 
         }
     }
@@ -35,13 +35,13 @@ class PostFetch extends Component{
                 <h3>
                     Post Request using Fetch
                 </h3>
-                <form>
+                
                     <div>
                         <input type="text" value={this.state.name} name="name" 
                         onChange={(data)=>{this.setState({name:data.target.value})}}/>
                     </div>
                     <div>
-                        <input type="text" value={this.state.quantity}name="quantity"
+                        <input type="text" value={this.state.quantity} name="quantity"
                         onChange={(data)=>{this.setState({quantity:data.target.value})}}/>
                     </div>
                     <div>
@@ -51,7 +51,7 @@ class PostFetch extends Component{
                     <div>
                         <button onClick={()=>{this.submit()}}>Submit</button>
                     </div>
-                </form>
+                
             </div>
         )
     }

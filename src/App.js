@@ -1,10 +1,13 @@
 import React from 'react';
 
 import './App.css';
-import HttpReact from './http/HttpReact';
-import HttpPost from './http/HttpPost';
-import GetFetch from './http/GetFetch';
+// import HttpReact from './http/HttpReact';
+// import HttpPost from './http/HttpPost';
+// import GetFetch from './http/GetFetch';
 import PostFetch from './http/PostFetch';
+import Fragments from './Fragments/Fragments';
+import Hoc from './HOC/Hoc';
+import HoverCounter from './HOC/HoverCounter';
 
 // import Unmounting from './LifeCycles/Unmounting';
 // import ReactForm from './Forms/ReactForms';
@@ -31,7 +34,10 @@ import PostFetch from './http/PostFetch';
 function App() {
   return (
     <div className="App">
-      <PostFetch />
+      <Hoc />
+      <HoverCounter />
+    {/* <Fragments /> */}
+        {/* <PostFetch /> */}
       {/* <GetFetch /> */}
       {/* <HttpPost /> */}
       {/* <HttpReact /> */}
