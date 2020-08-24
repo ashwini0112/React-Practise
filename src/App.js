@@ -8,6 +8,9 @@ import PostFetch from './http/PostFetch';
 import Fragments from './Fragments/Fragments';
 import Hoc from './HOC/Hoc';
 import HoverCounter from './HOC/HoverCounter';
+import ClickCounter from './RenderProps/ClickCounter';
+import UserRender from './RenderProps/UserRender';
+import CounterR from './RenderProps/CounterR';
 
 // import Unmounting from './LifeCycles/Unmounting';
 // import ReactForm from './Forms/ReactForms';
@@ -34,8 +37,13 @@ import HoverCounter from './HOC/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <Hoc />
-      <HoverCounter />
+      
+      <CounterR render={(count, incrementHandler)=>(<ClickCounter count = {count} incrementHandler = {incrementHandler}/>
+      )} />
+     {/* <ClickCounter />
+     <UserRender name={(isLoggedIn)=>isLoggedIn ? 'Ashwini' : 'Guest'} /> */}
+      {/* <Hoc /> */}
+      {/* <HoverCounter /> */}
     {/* <Fragments /> */}
         {/* <PostFetch /> */}
       {/* <GetFetch /> */}
