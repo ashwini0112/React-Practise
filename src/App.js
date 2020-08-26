@@ -13,7 +13,9 @@ import UserRender from './RenderProps/UserRender';
 import CounterR from './RenderProps/CounterR';
 
 // import Unmounting from './LifeCycles/Unmounting';
-// import ReactForm from './Forms/ReactForms';
+import ReactForm from './Forms/ReactForms';
+import ToDo from './ToDo';
+import ListItems from './ListItems';
 
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -38,8 +40,11 @@ function App() {
   return (
     <div className="App">
       
-      <CounterR render={(count, incrementHandler)=>(<ClickCounter count = {count} incrementHandler = {incrementHandler}/>
-      )} />
+    <ToDo />
+    
+
+      {/* <CounterR render={(count, incrementHandler)=>(<ClickCounter count = {count} incrementHandler = {incrementHandler}/>
+      )} /> */}
      {/* <ClickCounter />
      <UserRender name={(isLoggedIn)=>isLoggedIn ? 'Ashwini' : 'Guest'} /> */}
       {/* <Hoc /> */}
@@ -49,7 +54,7 @@ function App() {
       {/* <GetFetch /> */}
       {/* <HttpPost /> */}
       {/* <HttpReact /> */}
-    {/* <ReactForm /> */}
+     {/* <ReactForm />  */}
       {/* <Unmounting /> */}
 
     {/* <Updatinglifecycle favcol="yellow"/> */}
